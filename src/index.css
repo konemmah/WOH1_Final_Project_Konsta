@@ -95,6 +95,70 @@ p {
   margin: 0;
 }
 
+.flight-search {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 24px 32px;
+}
+
+.flight-search__form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.flight-search__form input,
+.flight-search__form button {
+  min-width: 0;
+  box-sizing: border-box;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font: inherit;
+}
+
+.flight-search__form button {
+  color: #fff;
+  background: var(--accent);
+  border-color: var(--accent);
+  cursor: pointer;
+}
+
+.flight-search__form button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.flight-results {
+  display: grid;
+  gap: 12px;
+  margin-top: 32px;
+  text-align: left;
+}
+
+.flight-result {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.flight-result__heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.flight-result p {
+  margin-top: 8px;
+}
+
+.flight-search__error {
+  margin-top: 16px;
+  color: #b42318;
+}
+
 code,
 .counter {
   font-family: var(--mono);
