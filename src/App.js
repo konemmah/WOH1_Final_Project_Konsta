@@ -8,5 +8,5 @@ const duffel = new Duffel({
 });
 
 //Test the API connection
-  const aircraft = await duffel.aircraft.get('arc_00009VMF8AhXSSRnQDI6Hi')
-  console.log(aircraft)
+//  const aircraft = await duffel.aircraft.get('arc_00009VMF8AhXSSRnQDI6Hi')
+//  console.log(aircraft)
