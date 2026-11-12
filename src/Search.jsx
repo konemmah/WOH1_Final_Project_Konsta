@@ -26,6 +26,8 @@ export default function Search() {
           passengers,
         }),
       });
+      const data = await response.json();
+      setResults(data);
     } catch (error) {
       console.error('Error searching flights:', error);
     } finally {
@@ -44,6 +46,15 @@ export default function Search() {
         <input type="number" placeholder="Number of passengers" value={passengers} onChange={(e) => setPassengers(e.target.value)} required />
         <button>Search</button>
       </form>
+      
+      // Display search results or loading state
+      {loading && <p>Loading...</p>}
+      {results && (
+        <div>
+          <h2>Found {results.length} offers</h2>
+          {/* Map through and display offers here */}
+        </div>
+      )}
     </div>
   );
 }
