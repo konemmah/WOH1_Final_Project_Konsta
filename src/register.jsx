@@ -1,6 +1,7 @@
 function Register() {
     const handleSubmit = (event) => {
         event.preventDefault();
+        window.alert('Thank you for registering!');
     };
 
     return (
