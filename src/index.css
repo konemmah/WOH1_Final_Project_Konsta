@@ -185,3 +185,11 @@ code {
   min-height: 100vh;
   margin: 0;
 }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: hsl(210, 25%, 24%); /
+  color: #212529; /* Optional: sets default text color */
+}
