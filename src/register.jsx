@@ -1,7 +1,7 @@
 function Register() {
     const handleSubmit = (event) => {
         event.preventDefault();
-        window.alert('Thank you for registering!') className="alert alert-light";
+        window.alert('Thank you for registering!'); className="alert alert-light";
     };
 
     return (
