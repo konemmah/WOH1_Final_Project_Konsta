@@ -10,11 +10,11 @@ function Register() {
             <p>Please fill out the form below to register to get the best deals.</p>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="name">Name:</label>
-                <input type="text" id="name" name="name" required />
+                <input type="text" id="name" name="name" className="form-control rounded-3" required />
                 <label htmlFor="email">Email:</label>
-                <input type="email" id="email" name="email" required />
+                <input type="email" id="email" name="email" className="form-control rounded-3" required />
                 <label htmlFor="password">Password:</label>
-                <input type="password" id="password" name="password" required />
+                <input type="password" id="password" name="password" className="form-control rounded-3" required />
                 <label htmlFor="marketing">
                     <input type="checkbox" id="marketing" name="marketing" />
                     I want to receive marketing emails
