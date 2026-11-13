@@ -1,4 +1,5 @@
 import 'dotenv/config';
+import cors from 'cors';
 import express from 'express';
 import { Duffel } from '@duffel/api';
 
@@ -10,7 +11,12 @@ if (!token) {
 
 const duffel = new Duffel({ token });
 const app = express();
+const allowedOrigins = (process.env.ALLOWED_ORIGINS || 'http://localhost:5173')
+  .split(',')
+  .map((origin) => origin.trim())
+  .filter(Boolean);
 
+app.use(cors({ origin: allowedOrigins }));
 app.use(express.json());
 
 app.post('/api/search-flights', async (req, res) => {
@@ -64,6 +70,8 @@ app.post('/api/search-flights', async (req, res) => {
   }
 });
 
-app.listen(3001, () => {
-  console.log('Flight search API listening on http://localhost:3001');
+const port = process.env.PORT || 3001;
+
+app.listen(port, () => {
+  console.log(`Flight search API listening on port ${port}`);
 });

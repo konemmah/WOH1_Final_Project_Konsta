@@ -1,3 +1,23 @@
+# My React App
+
+## Links
+
+- [Public GitHub repository](https://github.com/konemmah/my_react_app)
+- [Live application on GitHub Pages](https://konemmah.github.io/my_react_app/)
+
+## About
+
+A React app for searching flights and managing a travel checklist.
+
+## Deployment
+
+The frontend is deployed to GitHub Pages by the workflow in `.github/workflows/deploy.yml`.
+To connect it to the Express API, deploy the `server` entry point to a Node host and set:
+
+- `DUFFEL_API_KEY` on the API host only
+- `ALLOWED_ORIGINS=https://konemmah.github.io` on the API host
+- `VITE_API_BASE_URL` as a GitHub Actions repository variable, set to the API host URL
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.

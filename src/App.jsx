@@ -4,12 +4,12 @@ import Footer from './Footer.jsx'
 import Checklist from './checklist.jsx'
 import Search from './Search.jsx'
 import Register from './register.jsx'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { HashRouter, Routes, Route } from 'react-router-dom'
 
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <>
         <Header/>
         <Routes>
@@ -20,7 +20,7 @@ function App() {
         </Routes>
         <Footer/>
       </>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 

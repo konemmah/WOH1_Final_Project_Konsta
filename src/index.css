@@ -50,9 +50,6 @@
   }
 }
 
-
-}
-
 #root {
   width: 1126px;
   max-width: 100%;
@@ -190,6 +187,6 @@ html, body, #root {
   height: 100%;
   margin: 0;
   padding: 0;
-  background-color: hsl(240, 1%, 63%); /
+  background-color: hsl(240, 1%, 63%);
   
 }

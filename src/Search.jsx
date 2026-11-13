@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+const apiBaseUrl = (import.meta.env.VITE_API_BASE_URL || '').replace(/\/+$/, '');
+
 export default function Search() {
   const [origin, setOrigin] = useState('');
   const [destination, setDestination] = useState('');
@@ -17,7 +19,7 @@ export default function Search() {
     setError('');
 
     try {
-      const response = await fetch('/api/search-flights', {
+      const response = await fetch(`${apiBaseUrl}/api/search-flights`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
