@@ -18,10 +18,12 @@ function Register() {
                     <input type="checkbox" id="marketing" name="marketing" />
                     I want to receive marketing emails
                 </label>
-                <button type="submit">Register</button>
+                <input type="submit" value="Register" />
+        
             </form>
         </div>
     );
 }
+
 
 export default Register
