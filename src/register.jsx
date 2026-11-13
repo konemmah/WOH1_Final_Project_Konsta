@@ -1,7 +1,7 @@
 function Register() {
     const handleSubmit = (event) => {
         event.preventDefault();
-        window.alert('Thank you for registering!');
+        window.alert('Thank you for registering!') className="alert alert-light";
     };
 
     return (
@@ -19,7 +19,7 @@ function Register() {
                     <input type="checkbox" id="marketing" name="marketing" />
                     I want to receive marketing emails
                 </label>
-                <input type="submit" value="Register" />
+                <input type="submit" value="Register" className="btn btn-light" />
         
             </form>
         </div>
