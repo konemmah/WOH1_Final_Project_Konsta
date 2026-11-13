@@ -8,7 +8,7 @@ function Header() {
             <nav>
                 <ul>
                     <li><Link to="/Search">Flights</Link></li>
-                    <li><Link to="/Holidays">Holidays</Link></li>
+                    <li><Link to="/Checklist">Checklist</Link></li>
                     <li><Link to="/Register">Register</Link></li>
                 </ul>
             </nav>
