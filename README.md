@@ -2,8 +2,8 @@
 
 ## Links
 
-- [Public GitHub repository](https://github.com/konemmah/my_react_app)
-- [Live application on GitHub Pages](https://konemmah.github.io/my_react_app/)
+- [Public GitHub repository](https://github.com/konemmah/WOH1_Final_Project_Konsta)
+- [Live application on GitHub Pages](https://konemmah.github.io/WOH1_Final_Project_Konsta/)
 
 ## About
 
