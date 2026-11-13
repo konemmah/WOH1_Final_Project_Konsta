@@ -29,7 +29,7 @@ return (
   <section>
     <h1>Trip checklist</h1>
     <p>{checkedCount} of {items.length} items completed</p>
-    <ul>
+    <ul className= "container-md list-unstyled text-center">
       {items.map((item) => (
         <li key={item.id}>
           <label>
