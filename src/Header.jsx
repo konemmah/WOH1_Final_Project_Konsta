@@ -6,7 +6,7 @@ function Header() {
     return (
         <header>
             <h1>Flight App</h1>
-            <nav className= "navbar navbar-expand-sm bg-dark navbar-dark">
+            <nav className= "navbar bg-dark navbar-dark">
                 <ul className= "container-fluid">
                     <li><Link to="/Search">Flights</Link></li>
                     <li><Link to="/Checklist">Checklist</Link></li>
