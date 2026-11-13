@@ -7,7 +7,7 @@ function Header() {
         <header>
             <h1>Welcome to my React App!</h1>
             <nav className= "navbar navbar-expand-sm bg-dark navbar-dark">
-                <ul>
+                <ul className= "container-fluid">
                     <li><Link to="/Search">Flights</Link></li>
                     <li><Link to="/Checklist">Checklist</Link></li>
                     <li><Link to="/Register">Register</Link></li>
